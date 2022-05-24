@@ -1,0 +1,71 @@
+/* Header */
+body{
+    background-color: #4B994F;
+    color: #FFF59D;
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    background-color: #8BC34A;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+}
+.menuIcon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+
+}
+
+/* premiere catégorie */
+.presentation{
+    height: 70vh;
+    background-image: url(../img/jackWalk.webp); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #4B994F;
+}
+.presentationText{
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+    
+    background-color: #4B994F;
+}
+
+.catchZone{
+    background-color: #4B994F;
+}
+
+/* attraction zone */
+.attractionZone{
+    width: 100%;
+}
+
+.dogOnPc{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 10vh;
+    align-items: center;
+    background-color: #8BC34A;
+}
+
+
+/* footer */
+.logoFooter{
+    display: flex;
+    justify-content: space-between;
+}
