@@ -2,6 +2,8 @@
 body{
     background-color: #4B994F;
     color: #FFF59D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
 }
 .header{
     display: flex;
@@ -15,16 +17,43 @@ body{
     width: 60px;
     height: 60px;
 }
-.menuIcon{
-    width: 24px;
-    height: 24px;
-    display: flex;
 
+/* Tentative menu deroulant */
+.menuList {
+    display: none;
 }
+.menuList.active {
+    position: absolute;
+    right: 0%;
+    background-color: #f1f1f1;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8BC34A;
+    color: #FFF59D;
+    font-size: 20px;
+}
+.menuItems{
+    
+    text-decoration: none;
+    color: #FFF59D;
+}
+
+#menuListContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 /* premiere catégorie */
 .presentation{
-    height: 70vh;
+    height: 80vh;
     background-image: url(../img/jackWalk.webp); 
     background-position: center;
     background-repeat: no-repeat;
@@ -35,9 +64,8 @@ body{
     height: 100%;
     display: flex;
     align-items: flex-end;
-    font-size: 20px;
-    
-    background-color: #4B994F;
+    font-size: 16px;    
+    /* background-color: #4B994F; */
 }
 
 .catchZone{
@@ -47,6 +75,11 @@ body{
 /* attraction zone */
 .attractionZone{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.attractionZone h2{
+    text-align: center;
 }
 
 .dogOnPc{
@@ -65,7 +98,38 @@ body{
 
 
 /* footer */
+footer{
+    background-color:#8BC34A;
+}
 .logoFooter{
     display: flex;
     justify-content: space-between;
 }
+.logoIcon{
+    font-size: 2rem;
+    color: #FFF59D;
+}
+
+
+
+/* formulaires d'inscription */
+.form{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.test{
+    /* width: 200px; */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.asterix{
+    font-size: 12px;
+    line-height: 1em;
+}
+
+
+/* form#myform label { display:inline-block; width:100px; }
+form#myform input { display:inline-block; }
+form#myform input[type=submit] { color:#fff; background-color:green; } */

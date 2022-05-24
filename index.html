@@ -16,10 +16,16 @@
     <!-- Cdn Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <!-- bootstrap Icon -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-        <!-- css -->
+    <!-- bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- css -->
     <link rel="stylesheet" href="public/assets/css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coming+Soon&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -28,71 +34,102 @@
         <div class="header">
             <h1>Walkyz</h1>
             <img class="logo" src="public/assets/img/Logo.png" alt="Logo du site walkyz">
-            <img class="menuIcon" src="public/assets/img/menuIcon.svg" alt="menu icon">
+
+
+
+            <img class="menuIcon" id="menuB" src="public/assets/img/menuIcon.svg" alt="menu icon">
+    
+
+
+
+
+
         </div>
 
     </header>
     <main>
+        <div id="menuList" class="menuList">
+            <div>
+                <a class="menuItems" href="">Inscription / Connexion</a>
+            </div>
+            <div>
+                <a class="menuItems" href="">Vos profils</a>
+            </div>
+            <div>
+                <a class="menuItems" href="">Liste d'amis</a>
+            </div>
+            <div>
+                <a class="menuItems" href="">Mes balades</a>
+            </div>
+            <div>
+                <a class="menuItems" href="">Cartes des balades</a>
+            </div>
+            <div>
+                <a class="menuItems" href=""> Contactez-nous</a>
+            </div>
+        </div>
 
         <div class="presentation">
         </div>
 
         <div>
-            <p class="presentationText">Préparez vos prochaines walkies,
-                faites vous des amis a deux ou
-                quatre pattes, échanger avec des
-                propriétaires passionnés et profitez-en
-                pour faire de belles balades</p>
+            <p class="presentationText">Préparez vos prochaines walkies, faites vous des amis a deux ou quatre pattes, échanger avec des propriétaires passionnés et profitez-en pour faire de belles balades</p>
         </div>
 
-        <div class="catchZone">
+        <div class="catchZone mt-4">
             <!-- Ici les bouton redirigent vers soit page des balade déjà existante, soit vers page pour creer une balade, si il est coo -->
-            <p>Vous souhaitez : </p>
-            <div class="form-check">
+            <h2 class="text-center my-5">Vous souhaitez : </h2>
+            <div class="form-check text-center mb-3">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
+                <label class="form-check-label p" for="flexCheckDefault">
                     Rejoindre un groupe de balade
                 </label>
             </div>
-            <div class="form-check">
+            <div class="form-check text-center mb-5">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
                     Créer une nouvelle balade
                 </label>
             </div>
         </div>
-        
+
         <div class="attractionZone">
-            <h2>Walkyz comment ça marche ?</h2>
+            <h2 class="my-5">Walkyz comment ça marche ?</h2>
 
             <div class="dogOnPc">
-                <img class="dogOnPc" src="public/assets/img/dogonpc.jpeg" alt="chien sur ordinateur">
+                <img class="dogOnPc my-5" src="public/assets/img/dogonpc.jpeg" alt="chien sur ordinateur">
                 <p class="text-center">Inscrivez vous afin de remplir votre profil et celui de votre animal </p>
             </div>
             <div class="dogOnPc">
-                <img class="dogOnPc" src="public/assets/img/dogonwalk.jpg" alt="photo de chien en balade">
-                <p class="text-center">Echanger avec des propriétaires de chien afin de planifier une balade ou une rencontre </p>
+                <img class="dogOnPc my-5" src="public/assets/img/dogonwalk.jpg" alt="photo de chien en balade">
+                <p class="text-center">Echanger avec des propriétaires de chien afin de planifier une balade ou une
+                    rencontre </p>
             </div>
             <div class="dogOnPc">
-                <img class="dogOnPc" src="public/assets/img/alotofdog.jpg" alt="photo de plusieurs chien dans un parc">
+                <img class="dogOnPc my-5" src="public/assets/img/alotofdog.jpg" alt="photo de plusieurs chien dans un parc">
                 <p class="text-center">Faites connaissance et partagez des instants de complicités </p>
             </div>
 
-            <h2>Prêt pour la balade ?</h2>
-            <p>Tous les jours de nouvelles personnes s'inscrivent sur Walys et cherchent des compagnons pour une promenade ou du temps de jeu !
+            <h2 class="my-5">Prêt pour la balade ?</h2>
+            <p class="text-center">Tous les jours de nouvelles personnes s'inscrivent sur Walys et cherchent des compagnons pour une
+                promenade ou du temps de jeu !
             </p>
-            <p>Rejoignez une communauté de fans de chien afin d'organiser facilement des balades dans votre zone géographique.</p>
-            <p>Que vous soyez un amateur de marche, de randonnée ou simplement un lanceur de frisbee amateur, définissez le type de sortie que vous cherchez au préalable.Sur Walkyz, tout le monde y trouve son compte.</p>
+            <p class="text-center">Rejoignez une communauté de fans de chien afin d'organiser facilement des balades dans votre zone
+                géographique.</p>
+            <p class="text-center">Que vous soyez un amateur de marche, de randonnée ou simplement un lanceur de frisbee amateur, définissez
+                le type de sortie que vous cherchez au préalable.Sur Walkyz, tout le monde y trouve son compte.</p>
 
-            <img class="dogOnPc" src="public/assets/img/dogplay.jpg" alt="photo de plusieurs chien jouant dans un parc">
+            <img class="dogOnPc my-5" src="public/assets/img/dogplay.jpg" alt="photo de plusieurs chien jouant dans un parc">
 
-            <p>Personnalisez votre profil ainsi que celui de votre compagnons afin de trouver le parfait partenaire de jeu</p>
+            <p class="text-center" class="text-center">Personnalisez votre profil ainsi que celui de votre compagnons afin de trouver le parfait partenaire de
+                jeu</p>
 
-            <img class="dogOnPc" src="public/assets/img/map.webp" alt="photo d'une capture google map">
+            <img class="dogOnPc my-5" src="public/assets/img/map.webp" alt="photo d'une capture google map">
 
-            <p>Parcourez notre base de données de lieux de balade "dog-friendly" afin de trouver un nouveau lieu de promenade, ou regardez qui parcours votre Walkyz habituel pour organiser une rencontre</p>
+            <p class="text-center">Parcourez notre base de données de lieux de balade "dog-friendly" afin de trouver un nouveau lieu de
+                promenade, ou regardez qui parcours votre Walkyz habituel pour organiser une rencontre</p>
             <div class="text-center">
-            <button type="button" class="btn btn-success">Je m'inscris</button>
+                <button type="button" class="btn btn-success my-5">Je m'inscris</button>
             </div>
 
         </div>
@@ -112,13 +149,13 @@
         <p>Mention légales</p>
 
         <h3>À propos de nous</h3>
-        <p>0655152125 <span class="bi bi-phone m-4"></span></p>
-        <p>thibaud.marin@gmail.com <span class="bi bi-envelope m-4"></span></p>
+        <p>0655152125 <span class="bi bi-phone m-4 logoIcon"></span></p>
+        <p>thibaud.marin@gmail.com <span class="bi bi-envelope m-4 logoIcon"></span></p>
 
         <div class="logoFooter">
-            <span class="bi bi-instagram"></span>
-            <span class="bi bi-twitter"></span>
-            <span class="bi bi-facebook"></span>
+            <span class="bi bi-instagram logoIcon"></span>
+            <span class="bi bi-twitter logoIcon"></span>
+            <span class="bi bi-facebook logoIcon"></span>
 
         </div>
 
