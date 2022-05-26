@@ -27,22 +27,21 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coming+Soon&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
 
         <div class="header">
-            <h1>Walkyz</h1>
-            <img class="logo" src="public/assets/img/Logo.png" alt="Logo du site walkyz">
+            <a href="index.html" class="text-decoration-none linkColor">
+                <h1>Walkyz</h1>
+            </a>
+
+            <a href="index.html">
+                <img class="logo" src="public/assets/img/Logo.png" alt="Logo du site walkyz"></a>
 
 
 
             <img class="menuIcon" id="menuB" src="public/assets/img/menuIcon.svg" alt="menu icon">
-    
-
-
-
-
-
         </div>
 
     </header>
@@ -67,73 +66,103 @@
                 <a class="menuItems" href=""> Contactez-nous</a>
             </div>
         </div>
-        <h2 class="m-3">1.Vos informations de connexion</h2>
-
+        <div class="text-center">
+            <h2 class="m-5">1.Vos informations de connexion</h2>
+        </div>
         <form action="">
             <div>
                 <label class="form" for="mail">Adresse mail *:</label>
-                <div class="test">
-                <input type="mail" id="mail" name="userName" placeholder="Adresse mail" maxlength="50" pattern="'[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$'" title="Votre adresse mail doit etre au format email@domaine.com">
+                <div class="spacingInput">
+                    <input type="mail" id="mail" name="userName" placeholder="Adresse mail" maxlength="50"
+                        pattern="'[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$'"
+                        title="Votre adresse mail doit etre au format email@domaine.com">
                 </div>
             </div>
             <div>
-                <label class="form" for="password">Mot de passe **:&nbsp;</label>
-                <div class="test">
-                <input type="email" id="password" name="userMail" placeholder="Mot de passe" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-                title="Doit contenir au minimum 8 carateres, un nombre, une majuscule et une minuscule">
-            </div>
+                <label class="form" for="password">Mot de passe **:</label>
+                <div class="spacingInput">
+                    <input type="password" id="password" name="userMail" placeholder="Mot de passe"
+                        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Doit contenir au minimum 8 carateres, un nombre, une majuscule et une minuscule">
+                </div>
             </div>
             <div>
                 <label class="form" for="passwordConfirm">confirmation MDP **:</label>
-                <div class="test">
-                <input type="text" id="passwordConfirm" name="userMessage" placeholder="confirmation MDP"></input>
+                <div class="spacingInput">
+                    <input type="password" id="passwordConfirm" name="userMessage"
+                        placeholder="confirmation MDP"></input>
                 </div>
             </div>
         </form>
-        <h2 class="m-3">2.Vos informations personnelles</h2>
-
+        <div class="text-center">
+            <h2 class="m-5">2.Vos informations personnelles</h2>
+        </div>
         <form action="">
+            <div class="text-center m-5">
+                <label for="">Civilité</label>
+                <div class="mt-4">
+                    <input type="radio" id="male" name="male" value="male" checked>
+                    <label for="male">Homme</label>
+                </div>
+
+                <div class="m-4">
+                    <input type="radio" id="female" name="female" value="female">
+                    <label for="female">Femme</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="other" name="other" value="other">
+                    <label for="other">Autre</label>
+                </div>
+
+
+            </div>
             <div>
                 <label class="form" for="name">Nom *:</label>
-                <div class="test">
-                <input type="text" id="name" name="userName" placeholder="Nom" pattern="[A-Za-z0-9]{20}">
-            </div>
+                <div class="spacingInput">
+                    <input type="text" id="name" name="userName" placeholder="Nom" pattern="[A-Za-z0-9]{20}">
+                </div>
             </div>
             <div>
                 <label class="form" for="firstName">Prénom *:&nbsp;</label>
-                <div class="test">
-                <input type="email" id="firstName" name="userFirstName" placeholder="Prénom" pattern="[A-Za-z0-9]{20}">
-            </div>
+                <div class="spacingInput">
+                    <input type="email" id="firstName" name="userFirstName" placeholder="Prénom"
+                        pattern="[A-Za-z0-9]{20}">
+                </div>
             </div>
             <div>
                 <label class="form" for="birthday">Date de naissance *:</label>
-                <div class="test">
-                <input  type="date" id="birthday" name="birthday"></input>
+                <div class="spacingInput">
+                    <input type="date" id="birthday" name="birthday"></input>
                 </div>
             </div>
 
             <div>
                 <label class="form" for="zipCode"> Code postal *:</label>
-                <div class="test">
-                <input type="number" id="zipCode" name="zipCode" placeholder="Code postal" pattern="[0-9]{5}">
+                <div class="spacingInput">
+                    <input type="number" id="zipCode" name="zipCode" placeholder="Code postal" pattern="[0-9]{5}">
                 </div>
             </div>
 
             <div>
                 <label class="form" for="adress">Adresse postale *:</label>
-                <div class="test">
-                <input type="text" id="adress" name="adress" placeholder="Adresse postale">
-            </div>
+                <div class="spacingInput">
+                    <input type="text" id="adress" name="adress" placeholder="Adresse postale">
+                </div>
             </div>
 
             <div>
                 <label class="form" for="town">Ville *:</label>
-                <div class="test">
-                <input type="text" id="town" name="town" placeholder="Ville">
+                <div class="spacingInput">
+                    <input type="text" id="town" name="town" placeholder="Ville">
                 </div>
             </div>
+            <div class="text-center">
+                <a href="signInOk.html">
+                    <button type="button" class="btn btn-success m-5">Retour à la page d'accueil</button></a>
+            </div>
         </form>
-        <p class="asterix">* Champs obligatoires</p> 
+        <p class="asterix">* Champs obligatoires</p>
         <p class="asterix">** Doit contenir une majuscule, une minuscule, un chiffre et faire minimum 8 caracteres</p>
 
 
@@ -145,8 +174,12 @@
 
     <footer>
         <div class="header">
-            <h1>Walkyz</h1>
-            <img class="logo" src="public/assets/img/Logo.png" alt="Logo du site walkyz">
+            <a href="index.html" class="text-decoration-none linkColor">
+                <h1>Walkyz</h1>
+            </a>
+
+            <a href="index.html">
+                <img class="logo" src="public/assets/img/Logo.png" alt="Logo du site walkyz"></a>
         </div>
         <p>Regles de bonne conduite</p>
         <p>Sécurites</p>
@@ -161,7 +194,6 @@
             <span class="bi bi-instagram logoIcon"></span>
             <span class="bi bi-twitter logoIcon"></span>
             <span class="bi bi-facebook logoIcon"></span>
-
         </div>
 
     </footer>

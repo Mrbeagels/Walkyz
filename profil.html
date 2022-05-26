@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- titre de la page -->
+    <title>Vos profils Walkyz</title>
+
+    <!-- Meta description unique a la page -->
+    <meta name="description"
+        content="Sur Walkyz vous avez la possibilité de remplir deux profils, le votre biensur et celui de vos compagnons à quatre pattes !">
+    <!-- FavIcon -->
+    <link rel="icon" href="public/assets/img/Logo.png">
+    <!-- Cdn Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <!-- css -->
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coming+Soon&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+<div class="header">
+            <a href="index.html" class="text-decoration-none linkColor">
+            <h1>Walkyz</h1></a>
+
+            <a href="index.html">
+            <img class="logo" src="public/assets/img/Logo.png" alt="Logo du site walkyz"></a>
+
+
+
+            <img class="menuIcon" id="menuB" src="public/assets/img/menuIcon.svg" alt="menu icon">
+</div>
+    </header>
+
+    <main>
+        <div id="menuList" class="menuList">
+            <div>
+                <a class="menuItems" href="">Inscription / Connexion</a>
+            </div>
+            <div>
+                <a class="menuItems" href="">Vos profils</a>
+            </div>
+            <div>
+                <a class="menuItems" href="">Liste d'amis</a>
+            </div>
+            <div>
+                <a class="menuItems" href="">Mes balades</a>
+            </div>
+            <div>
+                <a class="menuItems" href="">Cartes des balades</a>
+            </div>
+            <div>
+                <a class="menuItems" href=""> Contactez-nous</a>
+            </div>
+        </div>
+        <div class="text-center m-3">
+        <h1>Vos profils Walkyz</h1>
+        </div>
+        <img src="public/assets/img/walkies.jpg" class="w-100" alt="photo d'un golden retriever en balade, l'est l'automne les feuilles commencent a tomber.">
+        <p>Sur Walkyz nous savons que tous les chiens n'ont pas les même besoins, afin d'informer aux autres membres des envies et préférences de votre compagnons vous pouvez remplir deux profils distincts. Le votre et celui de votre compagnons. Vos profils pourront informer les autres membres de votre compatibilités.</p>
+
+        <div class="text-center">
+        <h2>Photos</h2>
+        </div>
+        <p>Une photo vaut mille mots ! Nous vous conseillons d'ajouter une photo de vous avec votre animal.Vous pouvez ajouter jusqu'à 5 photos total afin de vous faire connaitre ou reconnaitre des autres membres et simplifier vos prochaines Walkyz</p> 
+
+        <!-- ajout de photo de la part de l'utilisateur -->
+        <div class="addAPhotoParent">
+            <img  class="addAPhoto" src="public/assets/img/assAPhoto.png" alt="logo afin d'ajouter une photo">
+            <img class ="addAPhoto" src="public/assets/img/assAPhoto.png" alt="logo afin d'ajouter une photo">
+            <img  class="addAPhoto"src="public/assets/img/assAPhoto.png" alt="logo afin d'ajouter une photo">
+            <img class ="addAPhoto" src="public/assets/img/assAPhoto.png" alt="logo afin d'ajouter une photo">
+            <img class ="addAPhoto" src="public/assets/img/assAPhoto.png" alt="logo afin d'ajouter une photo">
+            <img class ="addAPhoto" src="public/assets/img/assAPhoto.png" alt="logo afin d'ajouter une photo">
+        </div>
+
+        <div class="text-center">
+        <h2>Votre profil</h2>
+        </div>
+
+        <div>
+            <label class="form" for="typeOfWalkyz">Quel type de balade souhaitez-vous faire ?</label>
+            <div class="spacingInput">
+                <select name="typeOfWalkyz" id="typeOfWalkyz">
+                    <option value="">Choissisez votre option</option>
+                    <option value="smallWalkyz">Courte balade (≃ 1h)</option>
+                    <option value="longWalkyz">Longue balade (>2h)</option>
+                    <option value="parkPlay">Faire jouer nos chiens</option>
+                    <option value="other">Autre</option>
+                    
+                </select>
+            </div>
+        </div>
+        <div>
+            <label class="form" for="when">Quand êtes-vous habituellement disponible ?</label>
+            <div class="spacingInput">
+                <select name="when" id="when">
+                    <option value="">Choissisez votre option</option>
+                    <option value="morningWalkyz">En semaine, pendant la journée</option>
+                    <option value="nightWalkyz">En semaine, le soir</option>
+                    <option value="weekendWalkyz">Le Week-end</option>
+                    <option value="other">Autre</option>
+                </select>
+        </div>
+        <div class="text-center">
+        <label class="bi bi-pen-fill" for="aboutU">Votre description</label>
+        </div>
+        <div class="text-center">
+        <input class="shortDescription" size="250" type="text" name="shortDescription" id="shortDescription"></input>
+        </div>
+        
+
+        <div class="text-center">
+        <h2>Le profil de votre chien</h2>
+        </div>
+
+        <form action="">
+            <div>
+                <label class="form" for="name">Prénom *:</label>
+                <div class="spacingInput">
+                    <input type="text" id="name" name="userName" placeholder="Prénom" pattern="[A-Za-z0-9]{20}">
+                </div>
+            </div>
+            <div>
+                <label class="form" for="firstName">Surnom *:&nbsp;</label>
+                <div class="spacingInput">
+                    <input type="email" id="firstName" name="userFirstName" placeholder="Surnom"
+                        pattern="[A-Za-z0-9]{20}">
+                </div>
+            </div>
+            <div>
+                <label class="form" for="birthday">Âge *:</label>
+                <div class="spacingInput">
+                    <input type="number" id="birthday" name="birthday" placeholder="Âge"></input>
+                </div>
+            </div>
+
+            <div>
+                <label class="form" for="zipCode">Poids *:</label>
+                <div class="spacingInput">
+                    <input type="number" id="zipCode" name="zipCode" placeholder="Poids" pattern="[0-9]{3}"> 
+                </div>
+            </div>
+
+            <div>
+                <label class="form" for="adress">Race *:</label>
+                <div class="spacingInput">
+                    <input type="text" id="adress" name="adress" placeholder="Race">
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <label class="form" for="">Comment definiriez vous le caractère de votre chien ?</label>
+            <div class="spacingInput">
+                <select name="when" id="caracter">
+                    <option value="">Choissisez votre option</option>
+                    <option value="angryDoggo">Dominant</option>
+                    <option value="Passif-Agressif"> Passif-Agressif</option>
+                    <option value="shyDoggo">Timide</option>
+                    <option value="friendlyDoggo">Amical</option>
+                    <option value="independentDoggo">Indépendant</option>
+                    <option value="playDoggo">Joueur</option>
+                </select>
+
+
+
+            <label class="form" for="when">Quel est son comportement vis a vis des autres chiens ?</label>
+            <div class="spacingInput">
+                <select name="when" id="caracterWithotherdoggo">
+                    <option value="">Choissisez votre option</option>
+                    <option value="PlayDoggo">Joueur</option>
+                    <option value="liveIsLife">très peu interessé par les autres chiens</option>
+                    <option value="">Le Week-end</option>
+                    <option value="other">Autre</option>
+                </select>
+
+
+            <div>
+                <label class="form" for="town">Comportement avec les autres chiens *:</label>
+                <div class="spacingInput">
+                    <input type="text" id="town" name="town" placeholder="Comportement ">
+                </div>
+            </div>
+
+            <div class="text-center">
+                <label class="bi bi-pen-fill" for="aboutU">Votre description</label>
+                </div>
+                <div class="text-center">
+                <input class="shortDescription" size="250" type="text" name="shortDescription" id="shortDescription"></input>
+                </div>
+
+            <div class="text-center">
+                <a href="signInOk.html">
+                    <button type="button" class="btn btn-success m-5">Retour à la page d'accueil</button></a>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <div class="header">
+            <a href="index.html" class="text-decoration-none linkColor">
+                <h1>Walkyz</h1></a>
+    
+                <a href="index.html">
+                <img class="logo" src="public/assets/img/Logo.png" alt="Logo du site walkyz"></a>
+        </div>
+        <p>Regles de bonne conduite</p>
+        <p>Sécurites</p>
+        <p>Conditions générales d'utilisation</p>
+        <p>Mention légales</p>
+
+        <h3>À propos de nous</h3>
+        <p>0655152125 <a href="tel:+3366109521"> <span class="bi bi-phone m-4 logoIcon"></span></a></p>
+        <p>thibaud.marin@gmail.com <a href="mailto:thibaud.marin1@gmail.com"> <span class="bi bi-envelope m-4 logoIcon"></span></a></p>
+
+        <div class="logoFooter">
+            <span class="bi bi-instagram logoIcon"></span>
+            <span class="bi bi-twitter logoIcon"></span>
+            <span class="bi bi-facebook logoIcon"></span>
+
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="public/assets/js/script.js"></script>
+    
+</body>
+
+</html>

@@ -17,6 +17,25 @@ body{
     width: 60px;
     height: 60px;
 }
+/* forms */
+input{
+    border: none;
+    border-bottom: 2px solid #8BC34A;
+    background-color: #4B994F;
+}
+::placeholder{
+    color: #FFF59D;
+    opacity: 0.5;
+    
+}
+/* probleme changement couleur placeholder date */
+::-webkit-calendar-picker-indicator {
+    color: #FFF59D;
+}
+::-ms-input-placeholder{
+    color: #FFF59D;
+    opacity: 0.5;
+}
 
 /* Tentative menu deroulant */
 .menuList {
@@ -41,6 +60,9 @@ body{
     text-decoration: none;
     color: #FFF59D;
 }
+.linkColor{
+    color:#FFF59D;
+}
 
 #menuListContainer {
     display: flex;
@@ -64,8 +86,6 @@ body{
     height: 100%;
     display: flex;
     align-items: flex-end;
-    font-size: 16px;    
-    /* background-color: #4B994F; */
 }
 
 .catchZone{
@@ -118,18 +138,38 @@ footer{
     text-align: center;
     width: 100%;
 }
-.test{
+.spacingInput{
     /* width: 200px; */
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .asterix{
     font-size: 12px;
     line-height: 1em;
 }
 
+/* signInOk */
 
-/* form#myform label { display:inline-block; width:100px; }
-form#myform input { display:inline-block; }
-form#myform input[type=submit] { color:#fff; background-color:green; } */
+.SignInOkText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+/* profils */
+
+.addAPhotoParent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 70vh;
+}
+.addAPhoto{
+    width: 150px;
+    border: solid 1px black;
+    height: 40%;
+}
+.shortDescription{
+    height: 60px;
+}
