@@ -45,22 +45,22 @@
     <main>
         <div id="menuList" class="menuList">
             <div>
-                <a class="menuItems" href="">Inscription / Connexion</a>
+                <a class="menuItems" href="signIn.html">Inscription / Connexion</a>
             </div>
             <div>
-                <a class="menuItems" href="">Vos profils</a>
+                <a class="menuItems" href="profil.html">Vos profils</a>
             </div>
             <div>
-                <a class="menuItems" href="">Liste d'amis</a>
+                <a class="menuItems" href="friendList.html">Liste d'amis</a>
             </div>
             <div>
-                <a class="menuItems" href="">Mes balades</a>
+                <a class="menuItems" href="walkyz.html">Mes balades</a>
             </div>
             <div>
-                <a class="menuItems" href="">Cartes des balades</a>
+                <a class="menuItems" href="walkyzMap.html">Cartes des balades</a>
             </div>
             <div>
-                <a class="menuItems" href=""> Contactez-nous</a>
+                <a class="menuItems" href="contact.html"> Contactez-nous</a>
             </div>
         </div>
         <div class="text-center m-3">
@@ -69,13 +69,13 @@
         <img src="public/assets/img/walkies.jpg" class="w-100" alt="photo d'un golden retriever en balade, l'est l'automne les feuilles commencent a tomber.">
         <p>Sur Walkyz nous savons que tous les chiens n'ont pas les même besoins, afin d'informer aux autres membres des envies et préférences de votre compagnons vous pouvez remplir deux profils distincts. Le votre et celui de votre compagnons. Vos profils pourront informer les autres membres de votre compatibilités.</p>
 
-        <div class="text-center">
+        <div class="text-center my-5">
         <h2>Photos</h2>
         </div>
         <p>Une photo vaut mille mots ! Nous vous conseillons d'ajouter une photo de vous avec votre animal.Vous pouvez ajouter jusqu'à 5 photos total afin de vous faire connaitre ou reconnaitre des autres membres et simplifier vos prochaines Walkyz</p> 
 
         <!-- ajout de photo de la part de l'utilisateur -->
-        <div class="addAPhotoParent">
+        <div class="addAPhotoParent my-5">
             <img  class="addAPhoto" src="public/assets/img/assAPhoto.png" alt="logo afin d'ajouter une photo">
             <img class ="addAPhoto" src="public/assets/img/assAPhoto.png" alt="logo afin d'ajouter une photo">
             <img  class="addAPhoto"src="public/assets/img/assAPhoto.png" alt="logo afin d'ajouter une photo">
@@ -89,7 +89,7 @@
         </div>
 
         <div>
-            <label class="form" for="typeOfWalkyz">Quel type de balade souhaitez-vous faire ?</label>
+            <label class="form my-3" for="typeOfWalkyz">Quel type de balade souhaitez-vous faire ?</label>
             <div class="spacingInput">
                 <select name="typeOfWalkyz" id="typeOfWalkyz">
                     <option value="">Choissisez votre option</option>
@@ -102,7 +102,7 @@
             </div>
         </div>
         <div>
-            <label class="form" for="when">Quand êtes-vous habituellement disponible ?</label>
+            <label class="form my-3" for="when">Quand êtes-vous habituellement disponible ?</label>
             <div class="spacingInput">
                 <select name="when" id="when">
                     <option value="">Choissisez votre option</option>
@@ -113,14 +113,14 @@
                 </select>
         </div>
         <div class="text-center">
-        <label class="bi bi-pen-fill" for="aboutU">Votre description</label>
+        <label class="bi bi-pen-fill mb-4" for="aboutU"> Votre description</label>
         </div>
-        <div class="text-center">
-        <input class="shortDescription" size="250" type="text" name="shortDescription" id="shortDescription"></input>
+        <div class="text-center" >
+            <textarea name="aboutU" id="aboutU" cols="30" rows="10" placeholder="Plutôt bâton ou frisbee ? croquette ou pâté ? Vous aimez parler de votre chien ? c'est l'endroit pour le faire ! "></textarea>
         </div>
         
 
-        <div class="text-center">
+        <div class="text-center my-3">
         <h2>Le profil de votre chien</h2>
         </div>
 
@@ -165,7 +165,7 @@
 
 
 
-            <label class="form" for="">Comment definiriez vous le caractère de votre chien ?</label>
+            <label class="form my-3" for="">Comment definiriez vous le caractère de votre chien ?</label>
             <div class="spacingInput">
                 <select name="when" id="caracter">
                     <option value="">Choissisez votre option</option>
@@ -179,7 +179,7 @@
 
 
 
-            <label class="form" for="when">Quel est son comportement vis a vis des autres chiens ?</label>
+            <label class="form mt-5 mb-3" for="when">Quel est son comportement vis a vis des autres chiens ?</label>
             <div class="spacingInput">
                 <select name="when" id="caracterWithotherdoggo">
                     <option value="">Choissisez votre option</option>
@@ -191,22 +191,22 @@
 
 
             <div>
-                <label class="form" for="town">Comportement avec les autres chiens *:</label>
+                <label class="form my-5" for="town">Comportement avec les autres chiens *:</label>
                 <div class="spacingInput">
                     <input type="text" id="town" name="town" placeholder="Comportement ">
                 </div>
             </div>
 
-            <div class="text-center">
-                <label class="bi bi-pen-fill" for="aboutU">Votre description</label>
+            <div class="text-center mb-3">
+                <label class="bi bi-pen-fill" for="aboutUrDog"> La description de votre chien</label>
                 </div>
                 <div class="text-center">
-                <input class="shortDescription" size="250" type="text" name="shortDescription" id="shortDescription"></input>
+                <textarea class="descriptionTextarea" type="text" name="aboutUrDog" id="aboutUrDog" cols="30" rows="10" placeholder="Plutôt bâton ou frisbee ? croquette ou pâté ? Vous aimez parler de votre chien ? c'est l'endroit pour le faire ! "></textarea>
                 </div>
 
             <div class="text-center">
                 <a href="signInOk.html">
-                    <button type="button" class="btn btn-success m-5">Retour à la page d'accueil</button></a>
+                    <button type="button" class="btn btn-success mt-5">Retour à la page d'accueil</button></a>
             </div>
         </form>
 
@@ -230,9 +230,9 @@
         <p>thibaud.marin@gmail.com <a href="mailto:thibaud.marin1@gmail.com"> <span class="bi bi-envelope m-4 logoIcon"></span></a></p>
 
         <div class="logoFooter">
-            <span class="bi bi-instagram logoIcon"></span>
-            <span class="bi bi-twitter logoIcon"></span>
-            <span class="bi bi-facebook logoIcon"></span>
+            <a href="https://www.instagram.com/"><span class="bi bi-instagram logoIcon"></span></a>
+            <a href="https://www.facebook.com/"> <span class="bi bi-twitter logoIcon"></span></a>
+            <a href="https://twitter.com/"><span class="bi bi-facebook logoIcon"></span></a>
 
         </div>
     </footer>
