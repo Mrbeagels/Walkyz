@@ -107,14 +107,14 @@ input{
     width: 100%;
 }
 
-.footer{
+/* .footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     height: 10vh;
     align-items: center;
-    background-color: #8BC34A;
-}
+    background-color: #8BC34A; */
+/* } */
 
 
 /* footer */
@@ -146,7 +146,7 @@ footer{
 }
 .asterix{
     font-size: 12px;
-    line-height: 1em;
+    line-height:1em;
 }
 
 /* signInOk */
@@ -178,3 +178,8 @@ textarea::placeholder {
     font-size: 14px;
 }
 
+/* Contact */
+
+#urMessage{
+    width: 100%;
+}

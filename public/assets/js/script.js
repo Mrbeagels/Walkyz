@@ -20,9 +20,10 @@ function displayList() {
 // }
 
 // Fonction alerte mail envoyé reinitialisation MDP
-var userMail = document.getElementById("mailForgotPassword").value;
+
 forgotPassword.addEventListener('click', alertForgotPassword);
 
 function alertForgotPassword(){
+    var userMail = document.getElementById("mailForgotPassword").value;
     alert(`Un mail de réinitialisation du mot de passe vient de vous être envoyé à ${userMail}, pensez a vérifier vos spams & indésirables`);
 }
